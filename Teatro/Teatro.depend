@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1614983537 source:d:\desktop\teatro\main.cpp
+	<iostream>
+	<stdlib.h>
+	<locale.h>
+	"Teatro.h"
+
+1614983550 d:\desktop\teatro\teatro.h
+	<iostream>
+

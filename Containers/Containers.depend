@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1615727750 source:d:\desktop\containers\main.cpp
+	<iostream>
+	<stdlib.h>
+	"Container.h"
+
+1615550600 d:\desktop\containers\container.h
+
