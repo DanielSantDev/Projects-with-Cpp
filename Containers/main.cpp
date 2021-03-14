@@ -42,10 +42,10 @@ int main()
 
 do{
     system("cls");
-    cout<<"****PATIO DE CONTEINERS****"<<endl;
-    cout<<"1 - ARMAZENAR CONTENEIR."<<endl;
-    cout<<"2 - REMOVER CONTEINER."<<endl;
-    cout<<"3 - CONSULTAR CONTEINER NO TOPO."<<endl;
+    cout<<"****PATIO DE CONTAINER****"<<endl;
+    cout<<"1 - ARMAZENAR CONTAINER."<<endl;
+    cout<<"2 - REMOVER CONTAINER."<<endl;
+    cout<<"3 - CONSULTAR CONTAINER NO TOPO."<<endl;
     cout<<"4 - EXIBIR PATIO."<<endl;
     cout<<"9 - SAIR."<<endl;
     cout<<"SELECIONE:";
@@ -54,21 +54,20 @@ do{
     case 1:
         cout<<"\nDigite a quadra: ";
         cin>>quadra;
-        if(quadra >)
         if(p[quadra]->pilhacheia()){
             cout<<"Quadra lotada..."<<endl;
             system("pause");
         }
         else{
-            cout<<"Dados do conteiner."<<endl;
-            cout<<"Digite o codigo do Conteiner: ";
+            cout<<"DADOS DO CONTAINER."<<endl;
+            cout<<"Digite o codigo do CONTAINER: ";
             cin>>cc.codigo;
             cout<<"Digite o tamanho: ";
             cin>>cc.tamanho;
             cout<<"Digite o Peso: ";
             cin>>cc.peso;
             p[quadra]->empilhaContainer(cc);
-            cout<<"Empilhamento com sucesso."<<endl;
+            cout<<"\nCONTAINER EMPILHADO COM SUCESSO."<<endl;
             system("pause");
         }
         break;
@@ -77,11 +76,11 @@ do{
         cout<<"\nDigite a quadra: ";
         cin>>quadra;
         if(p[quadra]->pilhavazia()){
-            cout<<"Quadra Vazia"<<endl;
+            cout<<"\nQUADRA VAZIA!!!"<<endl;
         }
         else{
             cc = p[quadra]->desempilha();
-            cout<<"Dados do conteiner."<<endl;
+            cout<<"DADOS DO CONTAINER."<<endl;
             cout<<"Codigo:"<<cc.codigo<<endl;
             cout<<"Tamanho:"<<cc.tamanho<<endl;
             cout<<"Peso:"<<cc.peso<<endl;
@@ -95,11 +94,11 @@ do{
 
         cin>>quadra;
         if(p[quadra]->pilhavazia()){
-            cout<<"\nQuadra Vazia"<<endl;
+            cout<<"\nQUADRA VAZIA!!!"<<endl;
         }
         else{
             cc = p[quadra]->elementodotopo();
-            cout<<"Dados do conteiner."<<endl;
+            cout<<"DADOS DO CONTAINER."<<endl;
             cout<<"Codigo:"<<cc.codigo<<endl;
             cout<<"Tamanho:"<<cc.tamanho<<endl;
             cout<<"Peso:"<<cc.peso<<endl;
@@ -111,12 +110,12 @@ do{
         cout<<"\nExibir o patio"<<endl;
         for(int q=0;q<tamPatio;q++){
             if(p[q]->pilhavazia()){
-                cout<<q<<" - Quadra vazia."<<endl;
+                cout<<q<<" - QUADRA VAZIA."<<endl;
             }else{
                 for(int i=0;i<=p[q]->getTopo();i++){
                     cc = p[q]->getValor(i);
                     cout<<q<<" - Quadra. Elemento do topo;\n\n";
-                    cout<<"Dados do conteiner."<<endl;
+                    cout<<"DADOS DO CONTAINER."<<endl;
                     cout<<"Codigo:"<<cc.codigo<<endl;
                     cout<<"Tamanho:"<<cc.tamanho<<endl;
                     cout<<"Peso:"<<cc.peso<<"\n\n";
@@ -129,7 +128,7 @@ do{
         cout<<"FIM"<<endl;
         break;
     default:
-        cout <<"Opcao invalida.\n";
+        cout <<"OPCAO INVALIDA!!!\nDIGITE NOVAMENTE!";
         system("pause");
     }
 }while(opc!=9);
