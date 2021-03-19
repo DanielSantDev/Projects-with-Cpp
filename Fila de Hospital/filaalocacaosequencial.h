@@ -66,6 +66,11 @@ public:
     Tipo getValor(unsigned posicao){
         return v[posicao];
     }
+
+    unsigned getTamanho(){
+        return tamanho;
+    }
+
 };
 
 
