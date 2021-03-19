@@ -18,7 +18,7 @@ using namespace std;
 int main()
 {
     system("color 3");
-    unsigned tam=5; // TAMANHO DA FILA
+    unsigned tam=30; // TAMANHO DA FILA
     int opc,senha=0;
     Fila<int> f(tam);
     cout<<"\tHOSPITAL DO GUARUJA\n\tSEJA BEM-VINDO!!!\n\n";
@@ -79,7 +79,7 @@ int main()
                 }
                 else{
                     for(int i=f.getInic();i<f.getTamanho();i++) {
-                        cout<<f.getValor(i)<<", ";
+                        cout<<f.getValor(i)<<" ";
                     }
                     for(int i=0;i<=f.getFim();i++) {
                         cout<<f.getValor(i)<<" ";
