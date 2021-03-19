@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1616178384 source:d:\desktop\fila em aloc sequencial\main.cpp
+	<iostream>
+	<stdlib.h>
+	"filaalocacaosequencial.h"
+
+1616178399 d:\desktop\fila em aloc sequencial\filaalocacaosequencial.h
+
