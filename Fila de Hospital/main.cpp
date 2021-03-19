@@ -10,7 +10,6 @@ FILA EM ALOCAÇÃO SEQUENCIAL EM ESTRUTURAS DE DADOS.
 by DANIEL SANTANA
 */
 
-
 #include <iostream>
 #include <stdlib.h>
 #include "filaalocacaosequencial.h"
@@ -19,7 +18,7 @@ using namespace std;
 int main()
 {
     system("color 3");
-    unsigned tam=30; // TAMANHO DA FILA
+    unsigned tam=10; // TAMANHO DA FILA
     int opc,senha=0;
     Fila<int> f(tam);
     cout<<"\tHOSPITAL DO GUARUJA\n\tSEJA BEM-VINDO!!!\n\n";
@@ -60,7 +59,11 @@ int main()
         break;
 
         case 3:
+        if(f.filavazia()){
+                cout<<"A FILA ESTA VAZIA!!!"<<endl;
+            }else{
         cout<<"O PROXIMO PACIENTE A SER CHAMADO SERA: "<<f.primeiro()<<endl;
+            }
         break;
 
         case 4:
