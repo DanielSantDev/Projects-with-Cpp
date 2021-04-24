@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1618609434 source:d:\desktop\pilha_expressão_a\main.cpp
+	<iostream>
+	"pilha_.h"
+
+1618511888 d:\desktop\pilha_expressão_a\pilha_.h
+
